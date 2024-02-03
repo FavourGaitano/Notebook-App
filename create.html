@@ -11,12 +11,16 @@
         <h3>Add New Note</h3>
         <div>
             <label  class ="inputs" for="title">Title:</label>
-            <input style="width:82%;" class="forminput" id="title" type="string" name="name" placeholder="Title"></br>
+            <input style="width:100%;" class="forminput" id="title" type="string" name="name" placeholder="Title"></br>
         </div>
         <div>
             <label class= "inputs" for="desc">Description:</label>
-            <input style="width:74%;" class="forminput" id="desc" type="string" name="description" placeholder="Description"></br>
+            <textarea style="width:100%; height: 200px;" class="forminput" id="desc" type="string" name="description" placeholder="Description"></textarea></br>
         </div>
+        <label style="display:none;" for="currentDate">Date:</label>
+        <input style="display:none;" type="date" id="currentDate" name="date" readonly required></br>
+        <!-- Readonly required -->
+
         <input  class="btn" type="submit" value="Submit" id="createNotebtn">
         <a href="index.html"><button class="btn" type="button" id="backButton">Back</button></a>
     </form>
